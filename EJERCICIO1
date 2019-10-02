@@ -1,1 +1,35 @@
+using System;
+
+namespace ParcialILabIII
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Usuario ingresa una cadena.
+            Console.WriteLine("Ingrese una cadena de carácteres: ");
+
+            String A = Console.ReadLine();
+
+
+            //Usuario ingresa una cadena más corta.
+            Console.WriteLine("Ingrese una cadena de carácteres más corta que la anterior: ");
+
+            String B = Console.ReadLine();
+
+            //Se crea una variable booleana que es True si la cadena B se encuentra dentro de la cadena A.
+            Boolean contiene = A.Contains(B);
+
+
+            //Si la cadena B se encuentra dentro de la A, imprime "ENCONTRADO", si no, "NO ENCONTRADO".
+            if (contiene == true)
+            {
+                Console.WriteLine("ENCONTRADO, la cadena {0} se encuentra dentro de la cadena {1}.", B, A);
+            } else
+            {
+                Console.WriteLine("NO ENCONTRADO, la cadena {0} no se encuentra dentro de la cadena {1}.", B, A);
+            }
+        }
+    }
+}
 
