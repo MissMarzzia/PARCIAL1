@@ -1,0 +1,25 @@
+using System;
+
+namespace EJERCICIO2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Ingrese una secuencia de numeros separados solo por coma: ");
+
+            string ingreso = Console.ReadLine();
+
+            string[] arreglo = ingreso.Split(",");
+
+            int aux = 0;
+
+            for (int i = 0; i < arreglo.Length; i++)
+            {
+                aux += Convert.ToInt32(arreglo[i]);
+            }
+
+            Console.WriteLine("La suma de los elementos dentro del arreglo es de {0}.", aux);
+        }
+    }
+}
